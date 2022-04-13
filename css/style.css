@@ -1,0 +1,319 @@
+@font-face {
+    font-family: Integral CF;
+    src: url(../fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+@font-face {
+    font-family: verta Demo PE Cutted;
+    src: url(../fonts/averta-demo-pe-cutted-demo-regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    font-family: Integral CF;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 0;
+}
+
+h3 {
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    margin: 0;
+}
+
+h4 {
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a:hover {
+    color: #000;
+}
+
+.btn-blue {
+    width: 131px;
+    height: 50px;
+    background: #3D00B7;
+    border: none;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    transition: .4s linear;
+    margin-right: 20px;
+}
+
+.btn-blue:hover {
+    background: #ffffff;
+    color: #3D00B7;
+    outline: 1px solid #3D00B7;
+}
+
+.btn-second {
+    width: 156px;
+    height: 50px;
+    border: 2px solid #3D00B7;
+    box-sizing: border-box;
+    border-radius: 60px;
+    color: #3D00B7;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    transition: .4s linear;
+}
+
+.btn-second:hover {
+    background: #3D00B7;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+nav {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 45px;
+    background: #F4F4F4;
+    margin-left: 31px;
+    margin-right: 35px;
+}
+
+.logo a {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3D00B7;
+    font-family: Integral CF;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 47px;
+}
+
+.menu-link {
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.menu-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #3D00B7;
+    transition: .4s linear;
+    opacity: 0;
+}
+
+.menu-link:hover::after {
+    opacity: 1;
+}
+.navbar-buttons{
+    position: relative;
+}
+.navbar-buttons input {
+    background: url(../img/search.svg) no-repeat 260px center;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid #EFEFEF;
+    color: #C0C0C0;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 0px 16px 30px;
+    margin-right: 20px;
+
+}
+
+.navbar-buttons input:focus {
+    outline: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .menu {
+        position: fixed;
+        background: #131418;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        pointer-events: all;
+        justify-content: center;
+        align-items: center;
+        z-index: 22;
+        animation: fade 0.1s linear;
+    }
+
+    .navbar-buttons {
+        position: fixed;
+        display: none !important;
+        height: 100vh;
+        width: 100vw;
+    }
+    .navbar-buttons.active{
+        display: flex !important;
+        left: 0;
+        top: 150px;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        pointer-events: all;
+        justify-content: center;
+        align-items: center !important;
+        z-index: 22;
+        animation: fade 0.1s linear;
+    }
+    .navbar-buttons form{
+        position: absolute;
+        top: -113px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 30px;
+        z-index: 102;
+        cursor: pointer;
+    }
+
+    .burger.active-burger:before {
+        background: #fff;
+        transform: rotate(45deg);
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+        top: 8px;
+    }
+
+    .burger.active-burger:after {
+        background: #fff;
+        transform: rotate(-45deg);
+        bottom: 10px;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    .burger.active-burger span {
+        transform: scale(0);
+    }
+
+    .burger:before,
+    .burger:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #000;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    .burger:before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+
+    .burger span {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        width: 100%;
+        background: #000;
+        height: 2px;
+        transform: scale(1);
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    .menu-item {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .navbar-buttons input{
+        margin-right: 0;
+    }
+    .btn-blue{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .menu-link {
+        color: white;
+    }
+}
