@@ -1,6 +1,6 @@
 @font-face {
     font-family: Integral CF;
-    src: url(../fonts/Fontspring-DEMO-integralcf-bold.otf);
+    src: url(../fonts/integral-cf-bold.otf);
 }
 
 @font-face {
@@ -19,7 +19,12 @@
 body {
     font-family: 'DM Sans', sans-serif;
 }
-
+header hr{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background: #EFEFEF;
+}
 h2 {
     font-family: Integral CF;
     font-weight: 400;
@@ -197,6 +202,106 @@ nav {
     cursor: pointer;
 }
 
+.header-text{
+    position: relative;
+}
+.header-text img{
+    position: absolute;
+    bottom: 10px;
+    left: -48px;
+    z-index: -1;
+}
+.header-text p{
+    font-size: 20px;
+    line-height: 160%;
+    color: #565656;
+    padding-right: 195px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.header-text .btn-blue{
+    font-family: verta Demo PE Cutted;
+    width: 210px;
+    height: 65px;
+    border: 0.5px solid #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 0.065em;
+}
+.header-text-nums{
+    margin-top: 30px;
+}
+.text-nums-item{
+    margin-right: 23px;
+}
+.header-text-nums p{
+    margin: 0;
+    padding: 0;
+}
+.header-images{
+    position: relative;
+    color: #ffffff;
+}
+
+.header-images-text{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+.header-images-text p{
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.05em;
+}
+.header-images-text span{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.header-images-img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.header-images-img img:nth-child(2){
+    position: absolute;
+    top: 24px;
+    right: -36px;
+    z-index: -1;
+}
+.header-images-img img:nth-child(3){
+    position: absolute;
+    top: 49px;
+    right: -67px;
+    z-index: -2;
+}
+.eth-img{
+    position: absolute;
+    top: 215px;
+    left: -50px;
+}
+.header-images-info{
+    position: absolute;
+    padding: 16px 26px;
+    top: 342px;
+    left: 50px;
+    width: 330px;
+    height: 73px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 12px;
+}
+.images-info-item span{
+    font-weight: 500;
+    font-size: 12px;
+}
+.images-info-item h6 img{
+    margin-right: 5px;
+}
+
+
+
+
+
 @media screen and (max-width: 992px) {
     .menu {
         position: fixed;
@@ -315,5 +420,19 @@ nav {
     }
     .menu-link {
         color: white;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .header-text p{
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+    h2{
+        font-size: 29px;
+    }
+    .header-text p{
+        font-size: 17px;
     }
 }
