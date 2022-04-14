@@ -27,4 +27,4 @@ function burgerMenu() {
       }
     })
   }
-  burgerMenu()
+  burgerMenu();

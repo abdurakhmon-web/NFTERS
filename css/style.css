@@ -20,6 +20,7 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 header hr{
+    margin: 0;
     border: none;
     width: 100%;
     height: 1px;
@@ -421,11 +422,31 @@ nav {
     .menu-link {
         color: white;
     }
-    h2{
-        font-size: 36px;
+    .header-text h2{
+        font-size: 35px;
+        padding-right: 85px;
     }
     .header-text p{
-        padding-right: 50px;
+        padding-right: 82px;
+        font-size: 17px;
+    }
+    .text-nums-item h2{
+        padding: 0;
+    }
+    .text-nums-item p{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-text h2{
+        padding-right: 0px;
+        font-size: 40px;
+    }
+    .header-text p{
+        padding-right: 0px;
+    }
+    .header-text p{
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -434,5 +455,45 @@ nav {
     }
     .header-text p{
         font-size: 17px;
+    }
+}
+@media screen and (max-width: 399px) {
+    .header-text h2{
+        font-size: 30px;
+    }
+    .header-images-text p{
+        font-size: 20px;
+    }
+    .header-images-text span{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .eth-img{
+        width: 98px;
+        left: -13px;
+        top: 150px;
+    }
+    .header-images-info{
+        top: 250px;
+        width: 230px;
+        height: 60px;
+        padding: 6px 25px;
+    }
+    .images-info-item span{
+        font-size: 11px;
+    }
+    .images-info-item h6{
+        font-size: 13px;
+    }
+    .header-images-img img:nth-child(1n){
+        width: 300px;
+       
+    }
+    .header-images-img img:nth-child(2n){
+        width: 244px;
+       
+    }
+    .header-images-img img:nth-child(3n){
+        width: 210px;
     }
 }
