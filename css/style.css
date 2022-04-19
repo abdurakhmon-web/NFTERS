@@ -349,6 +349,43 @@ nav {
 .user-nft-info h6 img{
     margin-right: 5px;
 }
+.collection-item-box{
+    margin-bottom: 35px;
+}
+.collection-item-box .box-item{
+    margin-left: 30px;
+}
+.collection-item-box .box-item h4{
+    margin-bottom: 15px;
+}
+.box-item .btn-blue{
+    width: 113px;
+    height: 45px;
+    color: #220970;
+    background: #fff;
+    border: 1px solid #3D00B7;
+}
+.box-item .btn-blue:hover,
+.box-item .btn-blue.active{
+    background: #3D00B7;
+    color: #fff;
+}
+.box-item-eth{
+    margin-bottom: 15px;
+}
+.box-item-eth a{
+    padding: 8px;
+    border: 1px solid #00AC4F;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #00AC4F;
+    margin: 0 9px;
+}
+.box-item-eth span{
+    font-size: 14px;
+    color: #757575;
+}    
 
 
 
