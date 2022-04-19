@@ -7,6 +7,10 @@
     font-family: verta Demo PE Cutted;
     src: url(../fonts/averta-demo-pe-cutted-demo-regular.ttf);
 }
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
 
 * {
     margin: 0;
@@ -388,8 +392,78 @@ nav {
 }    
 
 
-
-
+.top-cellections{
+    border-left: 1px solid #ECECEC;
+    padding-left: 35px;
+}
+.top-cellections h4{
+    font-family: Integral CF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.top-cellections p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #3D00B7;
+    margin-bottom: 20px;
+}
+.top-cellections-item{
+    border-bottom: 1px solid #ECECEC;
+    padding: 15px 0;
+}
+.top-cellections-item:last-child{
+    border: none;
+}
+.top-cellections-item h3{
+    font-size: 24px;
+    letter-spacing: -0.025em;
+    font-family: 'DM Sans', sans-serif;
+    margin-right: 22px;
+}
+.top-collections-img{
+    position: relative;
+    margin-right: 18px;
+}
+.top-collections-img .verify{
+    position: absolute;
+    top: -8px;
+    right: -6px;
+}
+.top-collections-ctypto{
+    margin-top: -8px;
+    margin-right: 25px;
+}
+.top-collections-ctypto p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500; 
+    letter-spacing: -0.025em;
+    color: #000000;
+}
+.top-collections-ctypto img{
+    margin-right: 6px;
+}
+.top-collections-ctypto span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    color: #636363;
+    display: flex;
+    align-items: center;
+}
+.top-cellections-item .num-green{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #14C8B0;
+    text-align: right;
+}
+.top-cellections-item .num-red{
+    font-family: 'Poppins', sans-serif;
+    color: #FF002E;
+    letter-spacing: -0.025em;
+}
 
 
 
